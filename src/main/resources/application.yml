@@ -22,7 +22,7 @@ spring:
     user: ${spring.r2dbc.username}
     password: ${spring.r2dbc.password}
     url: jdbc:postgresql://localhost:5432/polardb_order  # localhost для Flyway
-    locations: classpath:db/migration
+    locations: classpath:/db/migration
     baseline-on-migrate: true
   config:
     import: "optional:configserver:"
